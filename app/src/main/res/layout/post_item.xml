@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="16sp" >
+
+        <TextView
+            android:id="@+id/tv_post_item_subreddit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="14sp"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_post_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_post_item_subreddit"
+            android:paddingLeft="10sp"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_post_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_post_user"
+            android:paddingTop="1.5sp"
+            android:paddingLeft="15sp"
+            android:textColor="#9C9C9C"
+            android:layout_alignParentRight="true"
+            android:textSize="11sp" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_post_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#252525"
+        android:textStyle="bold"
+        android:paddingBottom="8sp"
+        android:paddingRight="10sp"
+        android:paddingLeft="10sp" />
+
+
+    <ImageView
+        android:id="@+id/iv_post_item_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#dadada"/>
+
+</LinearLayout>
